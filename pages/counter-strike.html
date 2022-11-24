@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike: Global Offensive | Info</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="counter-strike.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">
+                <img src="../img/control.png" class="logo-img" alt="Imagem de um controle">
+                <span>Gaming Code</span>
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn">
+                        <a href="#home" class="active">Informações</a>
+                        <a href="#home">Desenvolvedores</a>
+                        <a href="#jogabilidade">Jogabilidade</a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home flex-center" id="home">
+        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">
+        <div class="home-container">
+            <div class="home-img">
+                <img class="home-img-item" src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-285x380.jpg" alt="Imagem de um jogo">
+            </div>
+        </a>
+            <div class="info">
+                <h2><strong>Counter-Strike: Global Offensive</strong></h2>
+                <p>Foi lançado no dia 21 de agosto de 2012 para as plataformas Windows e Mac OS X no Steam, Xbox 360 , e uma versão exclusiva para os EUA para PlayStation 3 . A versão de Linux foi lançada em setembro de 2014 . O jogo conta com conteúdo clássico de tiro, como versões retrabalhadas de mapas clássicos, bem como novos mapas, personagens e modos de jogo. A versão da PSN oferece três formas de controles, que inclui DualShock 3, PlayStation Move.
+
+                Segundo a matéria, brasileiros compraram mais de 205 mil cópias do jogo da Valve entre abril e dezembro de 2015.
+                <br>
+
+                A primeira equipe a vencer o melhor 16 rodadas ganha o jogo.</p>
+            </div>
+            <div class="second-info">
+                <p>Desenvolvedora(s): Valve Corporation <br> Hidden Path Entertainment </p> <br> 
+                <p>Publicadora(s):    Valve Corporation </p> <br> 
+                <p>Distribuidora(s):            Steam</p> <br> 
+                <p>Compositor(es):     Mike Morasky</p> <br> 
+                <p>Motor:    	    Source Engine</p> <br>   
+                <p>Série:            Counter-Strike</p> <br> 
+                <p>MPlataforma(s)        Microsoft Windows <br> Mac OS X <br> Xbox 360  <br> Xbox One <br> PlayStation 3 <br> Linux</p> <br> 
+                <p>Lançamento: 21 de Agosto de 2012</p> <br> 
+                <p>Gênero(s):    Tiro em primeira pessoa</p> <br> 
+                <p>Modos de jogo:    Multiplayer Singleplayer</p> <br> 
+            </div>
+        </div>
+        <a href="#jogos" class="scroll-down">Mais informações abaixo <i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <section class="modulos section" id="jogabilidade">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Jogabilidade</h1>
+            <h2 class="section-title-02">Jogabilidade</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <div class="info sec-info">
+                        <summary><h2><strong>Como jogar, aperte em Saiba mais.</strong></h2></summary>
+                        <details class="details"><p><strong>CS:GO é um FPS da Valve disputado entre duas equipes. Elas se revezam entre terroristas e contra terroristas, os terroristas armam a bomba enquanto o outro time protege os bombs, locais onde os explosivos devem ser plantados. Alguns mapas funcionam com reféns, que por sua vez devem ser salvos pelos contra terroristas.</p></details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="modulos section" id="form">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Formulário</h1>
+            <h2 class="section-title-02">Formulário</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <form class="info second-info" action="../src/enviar.php" method="POST">
+                        <h2><strong>Responda aqui: </strong></h2>
+                        <div>
+                            Nome: <input name="name" type="text" class="input-primary" placeholder="Digite o seu nome" />
+                        </div>
+
+                        <div>
+                            Email: <input name="email" type="email" class="input-primary" placeholder="Digite o seu email" />
+                        </div>
+
+                        <div>
+                            Mensagem: <input name="message" type="text" class="input-message" placeholder="Digite algo aqui">
+                        </div>
+
+                        <input type="submit" value="Enviar" class="btn form-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+    
+</body>
+</html>

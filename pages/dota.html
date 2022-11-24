@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 | Info</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./dota.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">
+                <img src="../img/control.png" class="logo-img" alt="Imagem de um controle">
+                <span>Gaming Code</span>
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn">
+                        <a href="#home" class="active">Informações</a>
+                        <a href="#home">Desenvolvedores</a>
+                        <a href="#jogabilidade">Jogabilidade</a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home flex-center" id="home">
+        <a href="https://www.dota2.com/home">
+        <div class="home-container">
+            <div class="home-img">
+                <img class="home-img-item" src="https://static-cdn.jtvnw.net/ttv-boxart/29595-285x380.jpg" alt="Imagem de um jogo">
+            </div>
+        </a>
+            <div class="info">
+                <h2><strong>Dota 2</strong></h2>
+                <p>Dota 2 é um videogame de batalha multiplayer gratuito desenvolvido pela Valve Corporation. É uma sequência de Defense of the Ancients (DotA), uma modificação de um mapa desenvolvido para o jogo Warcraft III: The Frozen Throne. A versão 2 foi adotada pela Valve, em parceria com o designer de jogos e produtor original IceFrog.</p>
+            </div>
+            <div class="second-info">
+                <p>Desenvolvedora(s): Valve Corporation </p> <br> 
+                <p>Publicadora(s):    <abbr title="Estados unidos da america">(USA)</abbr> Valve Corporation <br> <abbr title="">(China)</abbr> Perfect World <br> <abbr title="">(Coreia do sul)</abbr> Nexon <br> <abbr title="">(Japão)</abbr> Nexon Co. Ltd. </p> <br> 
+                <p>Distribuidora(s):            Steam</p> <br> 
+                <p>designer(es):     IceFrog</p> <br> 
+                <p>Escritor(es):    	    SMarc Laidlaw <br> Ted Kosmatka <br> Kris Katz </p> <br>   
+                <p>Série:            Counter-Strike</p> <br> 
+                <p>MPlataforma(s)        Microsoft Windows <br> Mac OS X <br> Xbox 360  <br> Xbox One <br> PlayStation 3 <br> Linux</p> <br> 
+                <p>Lançamento: 21 de Agosto de 2012</p> <br> 
+                <p>Gênero(s):    Tiro em primeira pessoa</p> <br> 
+                <p>Modos de jogo:    Multiplayer Singleplayer</p> <br> 
+            </div>
+        </div>
+        <a href="#jogos" class="scroll-down">Mais informações abaixo <i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <section class="modulos section" id="jogabilidade">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Jogabilidade</h1>
+            <h2 class="section-title-02">Jogabilidade</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <div class="info sec-info">
+                        <summary><h2><strong>Como jogar, aperte em Saiba mais.</strong></h2></summary>
+                        <details class="details"><p><strong>O jogo é baseado em partidas online e offline, em cada uma das quais o objetivo é derrotar a equipe adversária. Cada base é defendida por torres e ondas de unidades (chamadas criaturas) que percorrem os caminhos principais do mapa (chamados trilhas) que levam às suas bases. Existem 3 trilhas no mapa do jogo, que por convenção são chamadas de trilha superior, trilha do meio e trilha inferior.</p></details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="modulos section" id="form">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Formulário</h1>
+            <h2 class="section-title-02">Formulário</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <form class="info second-info" action="../src/enviar.php" method="POST">
+                        <h2><strong>Responda aqui: </strong></h2>
+                        <div>
+                            Nome: <input name="name" type="text" class="input-primary" placeholder="Digite o seu nome" />
+                        </div>
+
+                        <div>
+                            Email: <input name="email" type="email" class="input-primary" placeholder="Digite o seu email" />
+                        </div>
+
+                        <div>
+                            Mensagem: <input name="message" type="text" class="input-message" placeholder="Digite algo aqui">
+                        </div>
+
+                        <input type="submit" value="Enviar" class="btn form-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+    
+</body>
+</html>

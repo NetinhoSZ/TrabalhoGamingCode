@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COD - Call of Duty | Info</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./cod.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">
+                <img src="../img/control.png" class="logo-img" alt="Imagem de um controle">
+                <span>Gaming Code</span>
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn">
+                        <a href="#home" class="active">Informações</a>
+                        <a href="#home">Desenvolvedores</a>
+                        <a href="#jogabilidade">Jogabilidade</a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home flex-center" id="home">
+        <a href="https://www.callofduty.com/br/pt">
+        <div class="home-container">
+            <div class="home-img">
+                <img class="home-img-item" src="https://static-cdn.jtvnw.net/ttv-boxart/512710-285x380.jpg" alt="Imagem de um jogo">
+            </div>
+        </a>
+            <div class="info">
+                <h2><strong>COD - Call Of Duty</strong></h2>
+                <p>Call of Duty é uma franquia de jogos eletrônicos de tiro em primeira pessoa publicado pela Activision.
+                    O primeiro título da série foi lançado em 2003 e começou nos computadores, mais tarde a série se expandiu para os mais variados consoles, portáteis e smartphones. O título mais recente, Call of Duty: Modern Warfare II, foi lançado em 28 de outubro de 2022.
+                    Os jogos da série Call of Duty são publicados pela Activision. Enquanto que o estúdio Infinity Ward ainda é o principal produtor, a Treyarch também já produziu alguns títulos onde a história está interligada entre eles. Em janeiro de 2016, já tinham sido vendidas mais de 250 milhões de cópias de jogos Call of Duty. Em particular, Call of Duty: Black Ops foi o jogo mais vendido da série, com um total de 30.5 milhões de cópias vendidas até o reboot de 2019, Call of Duty: Modern Warfare. De acordo com a Activision, as vendas dos jogos Call of Duty já ultrapassaram os US$15 bilhões. Em abril de 2021, a série já havia vendido mais de 400 milhões de cópias. Os primeiros jogos da série foram lançados com aclamação universal, com elogios em maior parte direcionados a história, enredo, e o seu modo multijogador estabelecido, mas vários dos títulos recentes receberam críticas mistas, com elogios a evolução da jogabilidade e gráficos da série, enquanto que algumas críticas foram direcionadas a sua repetitividade anual.</p>
+            </div>
+            <div class="second-info">
+                <p>Desenvolvedora(s):  Infinity Ward <br> (dentre outras) </p> <br> 
+                <p>Distribuidora(s):               Activision</p> <br> 
+                <p>Criador(es):                    Ben Chichoski</p> <br> 
+                <p>designer(es):     IceFrog</p> <br> 
+                <p>Escritor(es):    	    Marc Laidlaw <br> Ted Kosmatka <br> Kris Katz </p> <br> 
+                <p>Compositor(es):         Jason Hayes <br> Tim Larkin <br> Chance Thomas </p> <br> 
+                <p>Motor:           Source 2</p>
+                <p>Plataforma(s)        Microsoft Windows <br> Mac OS X <br> PS <br> Xbox <br> Nintendo <br> (dentre outras) </p> <br> 
+                <p>Lançamento do primeiro título:        29 de outubro de 2003 </p> <br> 
+                <p>Gênero(s):    Fps - tiro em primeira pessoa </p> <br> 
+                <p>Modos de jogo:    Campanha <br> Multiplayer <br> </p> <br> 
+            </div>
+        </div>
+        <a href="#jogos" class="scroll-down">Mais informações abaixo <i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <section class="modulos section" id="jogabilidade">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Jogabilidade</h1>
+            <h2 class="section-title-02">Jogabilidade</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <div class="info sec-info">
+                        <summary><h2><strong>Como jogar, aperte em Saiba mais.</strong></h2></summary>
+                        <details class="details"><p><strong>Para jogar no PC é necessário apenas ter um cadastro na Battle.net para baixar o jogo. <abbr title="Call Of Duty">COD - Call Of Duty</abbr> permite jogar uma partida solo ou em grupos. A melhor opção para começar é aproveitar em equipe, de preferência a equipe com quatro participantes. Jogar solo pode ser mais indicado quando já está treinado e acostumado com controles, macetes e outros detalhes do game.
+
+                            <br>
+                            <br> Mas não é indicado para quem está começando. Em especial por conta do número máximo de jogadores no mapa, que é de 150. <br> 
+                            <br>
+                            
+                            Os jogadores começam em um avião e precisam saltar para o mapa, uma ilha. Além disso, uma névoa mortal cresce cada vez mais ao redor do mapa, reduzindo a área de perambulação. Tudo está nos lugares, com uma pequena diferença ou outra.</p></details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="modulos section" id="form">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Formulário</h1>
+            <h2 class="section-title-02">Formulário</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <form class="info second-info" action="../src/enviar.php" method="POST">
+                        <h2><strong>Responda aqui: </strong></h2>
+                        <div>
+                            Nome: <input name="name" type="text" class="input-primary" placeholder="Digite o seu nome" />
+                        </div>
+
+                        <div>
+                            Email: <input name="email" type="email" class="input-primary" placeholder="Digite o seu email" />
+                        </div>
+
+                        <div>
+                            Mensagem: <input name="message" type="text" class="input-message" placeholder="Digite algo aqui">
+                        </div>
+
+                        <input type="submit" value="Enviar" class="btn form-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant | Info</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./valorant.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">
+                <img src="../img/control.png" class="logo-img" alt="Imagem de um controle">
+                <span>Gaming Code</span>
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn">
+                        <a href="#home" class="active">Informações</a>
+                        <a href="#home">Desenvolvedores</a>
+                        <a href="#jogabilidade">Jogabilidade</a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home flex-center" id="home">
+        <a href="https://playvalorant.com/pt-br/?gclid=Cj0KCQiA1NebBhDDARIsAANiDD3OBgSFI7ogtISqZEjeNm8U52G3maxFhlUbLCXvpsZWA7X_4IITqCwaAlWIEALw_wcB&gclsrc=aw.ds">
+        <div class="home-container">
+            <div class="home-img">
+                <img class="home-img-item" src="https://static-cdn.jtvnw.net/ttv-boxart/516575-285x380.jpg" alt="Imagem de um jogo">
+            </div>
+        </a>
+            <div class="info">
+                <h2><strong>Valorant</strong></h2>
+                <p>No modo de jogo principal, a equipe atacante tem uma bomba, chamada Spike, que eles precisam plantar em um local. Se a equipe atacante proteger com sucesso a bomba e ela detonar, eles ganharão um ponto. Se a equipe defensora desarmar com sucesso a bomba ou o cronômetro de 100 segundos da rodada expirar, a equipe defensora receberá um ponto. Eliminar todos os membros da equipe adversária também ganha uma rodada. <br>
+
+                A primeira equipe a vencer o melhor 13 rodadas ganha o jogo.</p>
+            </div>
+            <div class="second-info">
+                <p>Desenvolvedora(s): Riot Games</p> <br>
+                <p>Publicadora(s):    Riot Games </p> <br>
+                <p>Diretor(es):             David Nottingha <br> Joe Ziegler</p> <br>
+                <p>Produtor(es):    Anna Donlon <br> John Goscicki </p> <br>
+                <p>Projetista(s):    	Trevor Romleski <br> Salvatore Garozzo</p> <br> 
+                <p>Programador(es):   Paul Chamberlain <br> Dave Heironymus <br> David Straily </p> <br> 
+                <p>Motor: Unreal engine 4</p> <br> 
+                <p>Plataforma(s):    Microsoft Windows </p> <br> 
+                <p>Lançamento:    Microsoft Windows</p>
+                <p>2 de junho de 2020</p> <br> 
+                <p>Gênero(s):    Tiro em primeira pessoa</p> <br> 
+                <p>Modos de jogo:    Multijogador</p>
+            </div>
+        </div>
+        <a href="#jogos" class="scroll-down">Mais informações abaixo <i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <section class="modulos section" id="jogabilidade">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Jogabilidade</h1>
+            <h2 class="section-title-02">Jogabilidade</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <div class="info sec-info">
+                        <summary><h2><strong>Como jogar, aperte em Saiba mais.</strong></h2></summary>
+                        <details class="details"><p><strong> No Valorant existem 2 times: Atacantes e Defensores.</strong></p>
+                        <p>Seus objetivos: </p><br> 
+                        <p>Atacantes: Entrar no Bomb A ou B as vezes até o C e plantar a Spike(c4).</p><br>
+                        <p>Defensores: Impedir a entrada dos atacantes no Bomb e caso falhem o objetivo deles é defusar a Spike.</p></details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="modulos section" id="form">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Formulário</h1>
+            <h2 class="section-title-02">Formulário</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <form class="info second-info" action="../src/enviar.php" method="POST">
+                        
+                        <h2><strong>Responda aqui: </strong></h2>
+                        <div>
+                            Nome: <input name="name" type="text" class="input-primary" placeholder="Digite o seu nome" />
+                        </div>
+
+                        <div>
+                            Email: <input name="email" type="email" class="input-primary" placeholder="Digite o seu email" />
+                        </div>
+
+                        <div>
+                            Mensagem: <input name="message" type="text" class="input-message" placeholder="Digite algo aqui">
+                        </div>
+                        
+                        <input type="submit" value="Enviar" class="btn form-btn">
+                        
+                    </form>
+                    
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+    
+</body>
+</html>

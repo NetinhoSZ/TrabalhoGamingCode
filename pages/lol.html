@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends | Info</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./lol.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">
+                <img src="../img/control.png" class="logo-img" alt="Imagem de um controle">
+                <span>Gaming Code</span>
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn">
+                        <a href="#home" class="active">Informações</a>
+                        <a href="#home">Desenvolvedores</a>
+                        <a href="#jogabilidade">Jogabilidade</a>
+                        <a href="#form">Formulário</a>
+                    </div>
+                </div>
+                <div class="nav-menu-btn"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home flex-center" id="home">
+        <div class="home-container">
+            <a href="https://www.leagueoflegends.com/pt-br/">
+                <div class="home-img">
+                    <img class="home-img-item" src="https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg" alt="Imagem de um jogo">
+                </div>
+            </a>
+            <div class="info">
+                <h2><strong>League of Legends</strong></h2>
+                <p>É um jogo eletrônico do gênero multiplayer online battle arena(MOBA) desenvolvido e publicado pela Riot Games. Inspirado em Defense of the Ancients , uma modificação de Warcraft III, os fundadores da Riot buscaram desenvolver um jogo autônomo do mesmo gênero. No jogo, duas equipes de cinco jogadores batalham em um combate jogador contra jogador , com cada equipe ocupando e defendendo sua metade do mapa. Cada um dos dez jogadores controla um personagem, conhecido como «campeão», com habilidades únicas e diferentes estilos de jogo. Em seu lançamento, League of Legends recebeu várias avaliações positivas dos críticos, que destacaram a acessibilidade, design de personagens e valor de produção. Por outro lado, o comportamento negativo e abusivo de seus jogadores, criticado desde o seu lançamento, persiste, apesar das tentativas da Riot de corrigir o problema. Em 2019, o título atingiu o pico de oito milhões de jogadores simultâneos, com sua popularidade levando a conexões com outras mídias, tais como vídeos musicais, histórias em quadrinhos, contos e na série de televisão animada Arcane. League of Legends é frequentemente citado como o maior esporte eletrônico do mundo, com um cenário competitivo internacional composto por doze ligas.</p>
+            </div>
+            <div class="second-info">
+                <p>Desenvolvedora(s): Riot Games</p> <br> 
+                <p>Publicadora(s):    Riot Games </p> <br> 
+                <p>Diretor(es):    Andrei van Roon </p> <br> 
+                <p>Produtor(es):    Jeff Jew </p> <br> 
+                <p>Escritor(es):    Graham McNeill</p> <br> 
+                <p>Compositor(es):    Christian Linke </p> <br> 
+                <p>Plataforma(s):    Microsoft Windows </p> <br> 
+                <p>Conversões:    MacOS </p> <br> 
+                <p>Lançamento:    Microsoft Windows</p> <br> 
+                <p>27 de outubro de 2009</p> <br> 
+                <p>MacOS</p> <br> 
+                <p>1 de março de 2013</p> <br> 
+                <p>Gênero(s):    MOBA</p> <br> 
+                <p>Modos de jogo:    multijogador</p> <br> 
+            </div>
+        </div>
+        <a href="#jogos" class="scroll-down">Mais informações abaixo <i class="fas fa-arrow-down"></i></a>
+    </section>
+
+    <section class="modulos section" id="jogabilidade">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Jogabilidade</h1>
+            <h2 class="section-title-02">Jogabilidade</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <div class="info sec-info">
+                        <h2><strong>Jogabilidade</strong></h2>
+                        <p>O league of legends conta com 5 funções: </p>
+                        <p>Top: O Top laner geralmente é responsável por fazer a front nas Team Fights com os campeões Tanks e Bruisers.</p>
+                        <p>Jungler: O jungler ele é responsável por ajudar as demais lanes e garantir os objetivos.</p>
+                        <p>Mid: O mid laner ele joga muito com o jungler tendo a responsabilidade de ajudar o time a qualquer momento e também geralmente sendo o Top damage da equipe.</p>
+                        <p>AD Carry: O ADC geralmente também é responsavel pelo dano da equipe e efetivo para destruir os Tanks e Bruisers da equipe inimiga.</p>
+                        <p>Sup: O Suporte ele joga junto na lane com o AD Carry, tendo a responsabilidade de o ajuda-lo na rota e ajudar a equipe durante o jogo com cura, engage, escudos e etc...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="modulos section" id="form">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Formulário</h1>
+            <h2 class="section-title-02">Formulário</h2>
+
+            <section class="jogability flex-center" id="home">
+                <div class="home-container">
+                    <form class="info second-info" action="../src/enviar.php" method="POST">
+                        <h2><strong>Responda aqui: </strong></h2>
+                        <div>
+                            Nome: <input name="name" type="text" class="input-primary" placeholder="Digite o seu nome" />
+                        </div>
+
+                        <div>
+                            Email: <input name="email" type="email" class="input-primary" placeholder="Digite o seu email" />
+                        </div>
+
+                        <div>
+                            Mensagem: <input name="message" type="text" class="input-message" placeholder="Digite algo aqui">
+                        </div>
+
+                        <input type="submit" value="Enviar" class="btn form-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+    
+</body>
+</html>

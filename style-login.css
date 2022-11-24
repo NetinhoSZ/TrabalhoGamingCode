@@ -1,0 +1,83 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: 0; 
+}
+
+body{
+    color: var(--first-color);
+    background-image: url("./img/wallpaper-login.jpg");
+    margin: 2rem 0 0 0;
+    transition: .5s ease; 
+    height: 100%; 
+}
+
+.container {
+    display: flex; 
+    background-color: #ffffff;
+    padding: 2rem 2rem; 
+    align-items: center; 
+    justify-content: center; 
+    max-width: 18rem;
+    margin: auto;
+    margin-top: 16rem;
+    border: 2px solid black; 
+    border-radius: 1rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card-login {
+    background-color: #ffffff; 
+    display: flex; 
+    height: 15rem; 
+    
+} 
+
+.form-login {
+    background-color: #ffffff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    gap: 2rem;
+    padding: 0.5rem 0.5rem;
+} 
+
+.form-login input {
+    background-color: #ffffff; 
+    height: 2rem; 
+    border: 2px solid gray; 
+    border-radius: 2rem;
+    padding: 0.5rem; 
+
+} 
+
+.form-login button {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0.5rem;
+    font-size: 1.2rem; 
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer; 
+    border: 2px solid gray; 
+    border-radius: 1.25rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.form-login button:hover {
+    color: #a7a7a7;
+}
+
+.form-login h1 {
+
+    font-family: 'Press Start 2P', cursive; 
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    display: flex;
+
+}
+
+
