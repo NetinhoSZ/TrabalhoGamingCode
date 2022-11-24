@@ -1,216 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
-        body {
-            background-image: url("./img/background.png");
-        }
-    </style>
-    <title>Gaming Code</title>
+    <link rel="stylesheet" href="./style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Login - Gaming Code</title>
 </head>
 <body>
-
-    <!----Scroll to top button-->>
-    <div class="scrollToTop-btn flex-center">
-        <i class="fas fa-arrow-up"></i>
+    <div class="container">
+        <div class="card-login">
+            <div class="form-login">
+                <h1>Gaming Code</h1>
+                <input type="text" placeholder="Email ou Usuário" id="user">
+                <input type="password" placeholder="Senha" id="passwordUser">
+                <button onclick="login()">Logar</button>
+            </div>
+        </div>
     </div>
 
-    <header>
-        <div class="navbar">
-            <a href="#home" class="logo">
-                <img src="./img/control.png" class="logo-img" alt="Imagem de um controle">
-                <span>Gaming Code</span>
-            </a>
-            <div class="navigation">
-                <div class="nav-items">
-                    <div class="nav-close-btn">
-                        <a href="#home" class="active">Início</a>
-                        <a href="#jogos">Jogos</a>
-                        <a href="#info">Informações</a>
-                    </div>
-                </div>
-                <div class="nav-menu-btn"></div>
-            </div>
-        </div>
-    </header>
+    <script>
+        function login(){
 
-    <section class="home flex-center" id="home">
-        <div class="home-container">
-            <div class="info">
-                <h2>Bem vindo ao <strong>Game <br>Coding</strong></h2>
-                <p>Aqui você poderá encontrar informações de jogos da sua afinidade. Divirta-se encontrando os melhores jogos!</p>
-                <a href="#jogos" class="btn">Conheça os Jogos mais Populares <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-            <div class="home-img">
-                <img class="home-img-item" src="https://media.istockphoto.com/photos/top-down-view-of-colorful-illuminated-gaming-accessories-laying-on-picture-id1334436084?k=20&m=1334436084&s=612x612&w=0&h=oE1k9t0iNNZNCp2Pua_Q5AaTxyjhaKWXa9iaHkV1iQM=" alt="Imagem de um jogo">
-            </div>
-        </div>
-        <a href="#jogos" class="scroll-down">Rolar para baixo <i class="fas fa-arrow-down"></i></a>
-    </section>
+            const user = document.getElementById('user').value 
+            const password = document.getElementById('passwordUser').value 
 
-    <section class="modulos section" id="jogos">
-        <div class="container flex-center">
-            <h1 class="section-title-01">Jogos</h1>
-            <h2 class="section-title-02">Jogos</h2>
-            <div class="content">
-                <div class="modulo-list">
-                    <div class="img-card-container">
-                        <a href="./pages/lol.html" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>League of Legends</h3>
-                                <span>Jogo MOBA</span>
-                            </div>
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg" alt="Imagem de LOL">
-                        </a>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="./pages/valorant.html" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>Valorant</h3>
-                                <span>Jogo FPS</span>
-                            </div>
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/516575-285x380.jpg" alt="Imagem de Valorant">
-                        </a>
-                        <div class="modulo-model flex-center">
-                            <div class="modulo-model-body">
-                                <i class="fas fa-times portfolio-close-btn"></i>
-                                <h3>Valorant</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="./pages/counter-strike.html" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>CS-GO</h3>
-                                <span>Jogo FPS</span>
-                            </div>
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-285x380.jpg" alt="Imagem de CS-GO">
-                        </a>
-                        <div class="modulo-model flex-center">
-                            <div class="modulo-model-body">
-                                <i class="fas fa-times portfolio-close-btn"></i>
-                                <h3>CS-GO</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="./pages/dota.html" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>Dota 2</h3>
-                                <span>Jogo MOBA</span>
-                            </div>
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/29595-285x380.jpg" alt="Imagem de Dota 2">
-                        </a>
-                        <div class="modulo-model flex-center">
-                            <div class="modulo-model-body">
-                                <i class="fas fa-times portfolio-close-btn"></i>
-                                <h3>Dota 2</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="./pages/cod.html" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>COD Warzone</h3>
-                                <span>Jogo FPS</span>
-                            </div>
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/512710-285x380.jpg" alt="Imagem de COD">
-                        </a>
-                        <div class="modulo-model flex-center">
-                            <div class="modulo-model-body">
-                                <i class="fas fa-times portfolio-close-btn"></i>
-                                <h3>COD Warzone</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="./pages/rocket-league.html"class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>Rocket League</h3>
-                                <span>Jogo Esportivo</span>
-                            </div>
-                            <img src="https://static-cdn.jtvnw.net/ttv-boxart/30921-285x380.jpg" alt="Imagem de Rocket League">
-                        </a>
-                        <div class="modulo-model flex-center">
-                            <div class="modulo-model-body">
-                                <i class="fas fa-times portfolio-close-btn"></i>
-                                <h3>Rocket League</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="get-in-touch sub-section">
-            <div class="container">
-                <div class="content flex-center">
-                    <div class="contact-card flex-center">
-                        <div class="title">
-                            <h4>Conheça os</h4>
-                            <h3>Jogos da</h3>
-                            <h2>Atualidade</h2>
-                        </div>
-                        <div class="contact-btn">
-                            <a href="#" class="btn">Começar  Agora <i class="fas fa-paper-plane"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            const loginValido = validation(user, password)
 
-    <section class="modulos section" id="info">
-        <div class="container flex-center">
-            <h1 class="section-title-01">Equipe</h1>
-            <h2 class="section-title-02">Equipe</h2>
-            <div class="content">
-                <div class="modulo-list">
-                    <div class="img-card-container">
-                        <a href="https://github.com/NetinhoSZ" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>José Antônio (Neto)</h3>
-                                <span>João Pessoa - PB</span>
-                            </div>
-                            <img src="./img/first-member.jpg" alt="Imagem de Neto" class="neto">
-                        </a>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="https://github.com/yuriassuncx" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>Yuri Assunção</h3>
-                                <span>João Pessoa - PB</span>
-                            </div>
-                            <img src="./img/second-member.jpg" alt="Imagem de Yuri" class="yuri">
-                        </a>
-                    </div>
-                    <div class="img-card-container">
-                            <a href="https://github.com/Messias88" class="img-card">
-                            <div class="overlay"></div>
-                            <div class="info">
-                                <h3>Matheus Messias</h3>
-                                <span>Recife - PE</span>
-                            </div>
-                            <img src="./img/third-member.jpg" alt="Imagem de Matheus" class="matheus">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            if(loginValido === true){
+                window.location.href = './login.html'
+            } else {
+                window.alert('Credenciais inválidas.')
+            }
+        }
 
-    <script src="script.js"></script>
+        function validation(user, password){
+        if(user === 'admin' && password === '123') {
+            return true 
+        } else {
+            return false
+        }
+    }
+    </script>
 </body>
 </html>
